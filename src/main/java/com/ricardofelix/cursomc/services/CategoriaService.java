@@ -1,5 +1,6 @@
 package com.ricardofelix.cursomc.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,15 @@ public class CategoriaService {
 	public Categoria buscar ( Integer id) {
 		Optional<Categoria> cat = categoriaRepository.findById(id);
 		return cat.orElse(null);
+	}
+	
+	public List<Categoria> buscarAll(){
+		return categoriaRepository.findAll();
+	}
+	
+	public Categoria saveCategoria (Categoria categoria) {
+		return categoriaRepository.save(categoria);
+		
 	}
 	
 }

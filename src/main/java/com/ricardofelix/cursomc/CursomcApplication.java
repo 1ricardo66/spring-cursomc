@@ -25,7 +25,7 @@ public class CursomcApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 
-		Categoria cat1 = new Categoria(null, "Informática");
+		/*Categoria cat1 = new Categoria(null, "Informática");
 		Categoria cat2 = new Categoria(null, "Escritório");
 		
 		List<Categoria> lista = new ArrayList<>();
@@ -33,7 +33,9 @@ public class CursomcApplication implements CommandLineRunner{
 		lista.add(cat1);
 		lista.add(cat2);
 		
-		categoriaRepository.saveAll(Arrays.asList(cat1,cat2));
+		categoriaRepository.saveAll(Arrays.asList(cat1,cat2));*/
+		
+		
 		
 		
 	}
